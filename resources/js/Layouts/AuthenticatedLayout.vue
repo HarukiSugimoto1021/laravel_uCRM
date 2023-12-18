@@ -35,7 +35,10 @@ const showingNavigationDropdown = ref(false);
                             </div>
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                                 <NavLink :href="route('items.index')" :active="route().current('items.index')">
-                                    商品一覧
+                                    商品管理
+                                </NavLink>
+                                <NavLink :href="route('customers.index')" :active="route().current('customers.index')">
+                                    顧客管理
                                 </NavLink>
                             </div>
                         </div>
@@ -123,7 +126,12 @@ const showingNavigationDropdown = ref(false);
                     </div>
                     <div class="pt-2 pb-3 space-y-1">
                         <ResponsiveNavLink :href="route('items.index')" :active="route().current('items.index')">
-                            商品一覧
+                            商品管理
+                        </ResponsiveNavLink>
+                    </div>
+                    <div class="pt-2 pb-3 space-y-1">
+                        <ResponsiveNavLink :href="route('customers.index')" :active="route().current('customers.index')">
+                            顧客管理
                         </ResponsiveNavLink>
                     </div>
 
