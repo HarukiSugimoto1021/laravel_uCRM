@@ -11,7 +11,10 @@ use Illuminate\Support\Facades\DB;
 class AnalysisController extends Controller
 {
     public function index(Request $request){
-        return Inertia::render("Analysis");
+        $startDate = '2022-08-01';
+        $endDate = '2022-08-10';
 
+        // dd($data);
+        return Inertia::render("Analysis");
     }
 }
