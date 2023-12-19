@@ -10,6 +10,7 @@ use App\Http\Controllers\CustomerController;
 use App\Models\Customer;
 use App\Http\Controllers\PurchaseController;
 use App\Models\Purchase;
+use App\Http\Controllers\AnalysisController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,5 +65,7 @@ Route::resource('customers', CustomerController::class)
 
 Route::resource('purchases', PurchaseController::class)
 ->middleware(['auth', 'verified']);
+
+Route::get('analysis', [AnalysisController::class, 'index'])->name('analysis');
 
 require __DIR__.'/auth.php';
