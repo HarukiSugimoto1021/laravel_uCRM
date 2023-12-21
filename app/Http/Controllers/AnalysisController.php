@@ -11,10 +11,14 @@ use Illuminate\Support\Facades\DB;
 class AnalysisController extends Controller
 {
     public function index(Request $request){
-        $startDate = '2022-08-01';
-        $endDate = '2022-08-10';
+        $startDate = '2021-08-01';
+        $endDate = '2023-12-19';
 
+        // 1. 購買ID毎にまとめる
+        
         // dd($data);
+
+
         return Inertia::render("Analysis");
     }
 }
